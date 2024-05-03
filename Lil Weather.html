@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>LIL WEATHER</title>
+        <link rel="stylesheet" href="Lil Weather.css">
+        <link rel="icon" type="image/x-icon" href="Immagini/Cloud.png">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-center mt-3">
+                <h1 class="titolo">LIL WEATHER</h1>
+            </div>
+
+            <div class="mb-3">
+                <div class="search-box">
+                    <i class='bx bxs-map'></i>
+                    <input type="text" placeholder="Inserisci la città" class="form-control input_text search-box" id="cityInput">
+                    <button class="bx bx-search btn btn-primary submit centrobtn" id="submitButton"></button>
+                </div>
+            </div>
+            <div class="mt-5 cd1">
+                <div class="card cd2" id="weatherCard">
+                    <img id="img" src="Immagini/Cloud.png" class="weather-box">
+                    <h2 class="card-title name desc centro" id="name">choose a city..</h2>
+                        <p class="temp temperature"></p>
+                        <b><p class="descMain descrizione description"></p></b>
+                        <b><p class="temp_min descrizione tempmin"></p></b>
+                        <b><p class="temp_max descrizione tempmax"></p></b>
+                        
+                        <img class="errore" src="Immagini/Error.png" id="error-image" style="display: none;">
+                        <b><p class="scrittaerrore" id="error-message" style="display: none;">Oops! Location not found!</p></b>
+                </div>
+            </div>
+        </div>
+        <script src="Lil Weather.js"></script>
+    </body>
+</html>
